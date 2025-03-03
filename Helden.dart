@@ -7,23 +7,23 @@ final List<String> heroNames = [
   'Elena Fisher',
   'Sam Fisher',
   'Solid Snake',
+  'Master Chief',
   'Geralt von Riva',
   'Aloy',
-  'Master Chief',
   'Kratos',
 ];
 
-final String firstHero = '___';
-final String lastHero = '___';
-final String oneBeforeLastHero = '___';
+final String firstHero = heroNames.first;
+final String lastHero = heroNames.last;
+final String oneBeforeLastHero = heroNames[heroNames.length - 2];
 
-final int numberOfHeroes = 0;
+final int numberOfHeroes = heroNames.length;
 
-final String userFirstName = "Angi";
-final String userLastName = "Petzold";
+final String userFirstName = "Mike";
+final String userLastName = "Brockschmidt";
 
 // Initialen des Benutzers
-final String displayName = "???";
+final String displayName = userFirstName[0] + "." + " " + userLastName[0] + ".";
 
 void main() {
   runApp(const MainApp());
@@ -116,12 +116,12 @@ class ComplexDatatypesIIScreen extends StatelessWidget {
               ),
               SizedBox(height: 16),
               Text(
-                'Letzter Held der Liste: $firstHero',
+                'Letzter Held der Liste: $lastHero',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               SizedBox(height: 16),
               Text(
-                'Vorletzter Held der Liste: $firstHero',
+                'Vorletzter Held der Liste: $oneBeforeLastHero',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               SizedBox(height: 16),
