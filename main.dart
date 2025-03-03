@@ -1,13 +1,13 @@
 void main() {
 //   Test 1
-  // int age = 15;
-  // bool hasParentConsent = true;
-  // int movieAgeRating = 16;
+  int age = 15;
+  bool hasParentConsent = true;
+  int movieAgeRating = 16;
 
 //   Test 2
-  int age = 13;
-  bool hasParentConsent = false;
-  int movieAgeRating = 16;
+  // int age = 13;
+  // bool hasParentConsent = false;
+  // int movieAgeRating = 16;
 
   if (age >= movieAgeRating) {
     print("The Movie is for your age! ");
