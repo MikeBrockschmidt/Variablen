@@ -6,7 +6,6 @@ void main() {
   String e = "$a";
   String f = a.toString();
   String g = e + f + f;
-  bool h = a == b;
   bool i = a != b;
   bool j = a > b;
   bool k = f.length > (c * 4000).toString().length;
@@ -16,7 +15,6 @@ void main() {
   List<int> o = [1, 2, 3] + [4, 5, 6];
   bool p = g[0] == (3 + 3).toString();
   int z = o.last;
-  int q = o.first * o.last * o[1] - o.length;
 
   print(z);
 }
